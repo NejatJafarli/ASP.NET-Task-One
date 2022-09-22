@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Task_One.Models.FastFood>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View</title>
+</head>
+<body>
+
+    <h1>FastFood</h1>
+    @foreach (var item in Model)
+    {
+        <div>
+            <h2>Name:@item.Name</h2>
+            <p>Price: @item.Price</p>
+            <p>Description:@item.Description</p>
+            <p>Id:@item.Id</p>
+        </div>
+    }
+
+</body>
+</html>
